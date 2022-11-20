@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="../static/js/main.js"></script>
+    <title>Personal Expense Tracker</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="expense" class="active">Expenses</a>
+            <a href="#">Visualization</a>
+            <a href="#">Collaboration</a>
+            <a href="#">About</a>
+            <a href="logout" class="logout">Logout</a>
+        </div>
+
+        <!-- The form -->
+        <div id="center">    
+            <div class="form-popup" id="myForm">
+                <div class="tabs">
+                    <button class="tablinks active" onclick="openCity(event, 'Login')" id="default">Login</button>
+                    <button class="tablinks" onclick="openCity(event, 'Register')">Register</button>
+                </div>
+                <form action="#" method ="post" class="form-container" id="Login">
+                    <input type="hidden" name="type" value="login">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+
+                <form action="#" method="post" class="form-container" id="Register">
+                    <input type="hidden" name="type" value="register">
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Name" name="name" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Retype Password" name="conf_pass" required>
+
+                    <button type="submit" class="btn">Register</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+</body>
+</html>
