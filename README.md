@@ -9,6 +9,18 @@ manage your finances efficiently.
 
 http://169.51.207.139:31405/
 
+# Features
+1. Generate daily, monthly, yearly report.
+2. Set a monthly limit, receive an alert mail on crossing the limit.
+3. Download the report as PDF.
+4. Send the report to your registered email address.
+
+# Technologies used:
+1. Flask-python
+2. IBM-DB2
+3. Docker
+4. Kubernetes
+
 # Screenshots
 ![Screenshot from 2022-11-20 18-32-45](https://user-images.githubusercontent.com/78495319/203352932-60dae060-6347-43ad-84a2-e882fbabb151.png)
 ![Screenshot from 2022-11-20 18-34-27](https://user-images.githubusercontent.com/78495319/203353158-53b2eb7b-5c4e-43e9-af79-ff965b0dd18c.png)
